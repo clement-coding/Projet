@@ -41,7 +41,8 @@ var fillGrid = function (arr) {
         row.forEach(function (cell) {
             if (cell != 0) {
                 $("#" + id).text(cell).css({ backgroundColor: getBackColor(cell), color: getColor(cell), boxShadow: getBackShape(cell)  });
-                 if( cell = 8 || cell = 16 || cell = 32 || cell = 48)
+                
+                 if( cell == 8 || cell == 16 || cell == 32 || cell == 48)
                 {
                     $("#" + id).text(cell).css({transform: getBigShape(cell) });
                 
