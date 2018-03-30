@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu');
+
+
+#scoreboard {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+#scoreboard::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.score {
+  float: left;
+  width: 33vw;
+  height: 50px;
+  background-color: grey;
+  color: #776E65;
+  text-align: center;
+  border-radius: 5px;
+}
+#score {
+margin-right: 15px;
+
+
+}
+
+
+}
+
+
+.score:last-of-type {
+  margin-left: 145px;
+  margin-top: 10px;
+}
+
+.actualscore {
+  font-size: 1.5rem;
+  padding-top: 5px;
+}
+
+  #scoreboard {
+    width: 300px;
+    padding-left: 130px;
+
+  }
+
+  .score {
+    width: 130px;
+  }
+
+  .score:last-of-type {
+    margin-left: 145px;
+    margin-top: 10px;
+  }
+
+.container {
+  width: 500px;
+  
+  margin: 0 auto; }
+
+@import url(fonts/clear-sans.css);
+html, body 
+{
+  margin: 0;
+  padding: 0;
+  background: #2a597a;
+  color: #776e65;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px; }
+
+body {
+  margin: 80px 0; }
+
+  .heading:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+h1.title {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+  display: block;
+  float: left; }
+
+.grid-container {
+  position: absolute;
+  background : #2a597a;
+  z-index: 1; }
+
+.row {
+  margin-bottom: 15px; }
+.row:last-child {
+    margin-bottom: 0; }
+.row:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.cell {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  
+  font-size: 3.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  margin-right: 15px;
+  float: left;
+  display : table ; 
+  border-radius: 3px;
+  background: #6ba9d9; }
+.cell:last-child {
+    margin-right: 0; }
+  
+
