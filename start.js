@@ -40,9 +40,8 @@ var fillGrid = function (arr) {
     arr.forEach(function (row) {
         row.forEach(function (cell) {
             if (cell != 0) {
-                $("#" + id).text(cell).css({ backgroundColor: getBackColor(cell), color: getColor(cell), boxShadow: getBackShape(cell), transform: getBigShape(cell)  });
-
-                var x = document.getElementById(id); setTimeout(function() { x.style.transform="scale(1)";} , 80);
+                $("#" + id).text(cell).css({ backgroundColor: getBackColor(cell), color: getColor(cell), boxShadow: getBackShape(cell)  });
+                
             } else {
                 $("#" + id).text('').css({ backgroundColor: getBackColor(cell), color: getColor(cell), boxShadow: getBackShape(cell) });
             }
@@ -73,6 +72,25 @@ var incrementCol = function (id_col) {
     return id_col;
 }
 
+
+ /*transform: getBigShape(cell)
+ var x = document.getElementById(id); setTimeout(function() { x.style.transform="scale(1)";} , 80);
+
+function getBigShape(arr){
+console.log(arr);
+switch(arr) {
+
+        case 8: console.log(arr); return "scale(1.2)"; break;
+        case 16: return "scale(1.2)"; break;
+        case 32: return "scale(1.2)"; break;
+        case 32: return "scale(1.2)"; break;
+        case 48: return "scale(1.2)"; break;
+
+}
+
+}*/
+
+
 //CHANGER LES COULEURS
 function getBackColor(value) {
     switch (value) {
@@ -90,19 +108,7 @@ function getBackShape(arr) {
     }
 }
 
-function getBigShape(arr){
-console.log(arr);
-switch(arr) {
 
-        case 8: console.log(arr); return "scale(1.2)"; break;
-        case 16: return "scale(1.2)"; break;
-        case 32: return "scale(1.2)"; break;
-        case 32: return "scale(1.2)"; break;
-        case 48: return "scale(1.2)"; break;
-
-}
-
-}
 // fonction pour changer la couleur du texte
 function getColor(arr) {
     if (arr > 4) {
