@@ -41,7 +41,8 @@ var fillGrid = function (arr) {
         row.forEach(function (cell) {
             if (cell != 0) {
                 $("#" + id).text(cell).css({ backgroundColor: getBackColor(cell), color: getColor(cell), boxShadow: getBackShape(cell)  });
-                
+                $("#" + id).text(cell).css({transform: getBigShape(cell) });
+                var x = document.getElementById(id); setTimeout(function() { x.style.transform="scale(1)";} , 80);
             } else {
                 $("#" + id).text('').css({ backgroundColor: getBackColor(cell), color: getColor(cell), boxShadow: getBackShape(cell) });
             }
@@ -73,8 +74,8 @@ var incrementCol = function (id_col) {
 }
 
 
- /*transform: getBigShape(cell)
- var x = document.getElementById(id); setTimeout(function() { x.style.transform="scale(1)";} , 80);
+ 
+ 
 
 function getBigShape(arr){
 console.log(arr);
@@ -88,7 +89,7 @@ switch(arr) {
 
 }
 
-}*/
+}
 
 
 //CHANGER LES COULEURS
