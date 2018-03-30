@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/plugIn.js"></script>
+    <script type="text/javascript" src="./js/start.js"></script>
+    <script type="text/javascript" src="./js/slide.js"></script>
+    <script type="text/javascript" src="./js/merge.js"></script>
+    <script type="text/javascript" src="./js/end.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            $('.container').plugIn();
+
+        });
+
+    </script>
+
+    <title>2048</title>
+
+</head>
+ 
+  <body> 
+    <header> 
+    <div id="scoreboard">
+
+  <div id="score" class="score">
+    <p>score :</p>
+    <p class="actualscore"></p>
+  </div>
+
+  <div id="bestscore" class="score">
+    <p>bestscore :</p>
+    <p class="actualscore"></p>
+  </div>
+<div id="bestnumber" class="score">
+  <p>bestnumber :</p>
+  <p class="actualscore"></p>
+</div>
+</div>
+    </header> 
+    
+<div class= "container">
+<div class="heading">
+      <h1 class="title">2048</h1>
+    </div>
+
+<div id="scoreboard">
+  
+</div>
+      <div class="grid-container">
+        <div class="row">
+          <div id= "A0" class="cell">1</div>
+          <div id= "B0" class="cell">0</div>
+          <div id= "C0" class="cell">0</div>
+          <div id= "D0" class="cell">4</div>
+        </div>
+        <div class="row">
+          <div id= "A1" class="cell">5</div>
+          <div id= "B1" class="cell">0</div>
+          <div id= "C1" class="cell">0</div>
+          <div id= "D1" class="cell">8</div>
+        </div>
+        <div class="row">
+          <div id= "A2" class="cell">9</div>
+          <div id= "B2" class="cell">0</div>
+          <div id= "C2" class="cell">0</div>
+          <div id= "D2" class="cell">12</div>
+        </div>
+        <div class="row">
+          <div id= "A3" class="cell">13</div>
+          <div id= "B3" class="cell">0</div>
+          <div id= "C3" class="cell">0</div>
+          <div id= "D3" class="cell">16</div>
+        </div><br>
+
+
+    </div>
+      
+</div>
+    <footer> 
+        
+    </footer> 
+
+  </body> 
+</html>
