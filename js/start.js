@@ -42,13 +42,11 @@ var fillGrid = function (arr) {
             if (cell != 0) {
                 $("#" + id).text(cell).css({ backgroundColor: getBackColor(cell), color: getColor(cell), boxShadow: getBackShape(cell)  });
                 
-                 if( cell == 8 || cell == 16 || cell == 32 || cell == 48)
-                {
-                    $("#" + id).text(cell).css({transform: getBigShape(cell) });
-                
-                var x = document.getElementById(id); 
-                setTimeout(function() { x.style.transform="scale(1)";} , 80);
-            }
+                    if (cell == 8 || cell == 16 || cell == 32 || cell == 48) {
+                    getBigShape(arr);
+                }
+
+
             } else {
                 $("#" + id).text('').css({ backgroundColor: getBackColor(cell), color: getColor(cell), boxShadow: getBackShape(cell) });
             }
@@ -78,24 +76,16 @@ var incrementCol = function (id_col) {
     }
     return id_col;
 }
-
-
- 
- 
-
+                    
 function getBigShape(arr){
-console.log(arr);
-switch(arr) {
 
-        case 8: console.log(arr); return "scale(1.2)"; break;
-        case 16: return "scale(1.2)"; break;
-        case 32: return "scale(1.2)"; break;
-        case 32: return "scale(1.2)"; break;
-        case 48: return "scale(1.2)"; break;
+                    var elements = $("#" + id);
+                    elements.css({ transform: "scale(1.2)" });
+                    setTimeout(function () { elements.css({ transform: "scale(1)" }); }, 80);
 
 }
 
-}
+
 
 
 //CHANGER LES COULEURS
