@@ -43,7 +43,7 @@ var fillGrid = function (arr) {
                 $("#" + id).text(cell).css({ backgroundColor: getBackColor(cell), color: getColor(cell), boxShadow: getBackShape(cell)  });
                 
                     if (cell == 8 || cell == 16 || cell == 32 || cell == 48) {
-                    getBigShape(arr);
+                    mergeAnimation(id);
                 }
 
 
@@ -77,7 +77,7 @@ var incrementCol = function (id_col) {
     return id_col;
 }
                     
-function getBigShape(arr){
+function mergeAnimation(id){
 
                     var elements = $("#" + id);
                     elements.css({ transform: "scale(1.2)" });
