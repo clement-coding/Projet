@@ -42,10 +42,9 @@ var fillGrid = function (arr) {
             if (cell != 0) {
                 $("#" + id).text(cell).css({ backgroundColor: getBackColor(cell), color: getColor(cell), boxShadow: getBackShape(cell)  });
                 
-                    if (cell == 8 || cell == 16 || cell == 32 || cell == 48) {
-                    mergeAnimation(id);
-                }
-
+                  if (cell == 8 || cell == 16 || cell == 32 || cell == 48) {
+                   mergeAnimation(id); }
+               
 
             } else {
                 $("#" + id).text('').css({ backgroundColor: getBackColor(cell), color: getColor(cell), boxShadow: getBackShape(cell) });
@@ -78,10 +77,10 @@ var incrementCol = function (id_col) {
 }
                     
 function mergeAnimation(id){
-
-                    var elements = $("#" + id);
-                    elements.css({ transform: "scale(1.2)" });
-                    setTimeout(function () { elements.css({ transform: "scale(1)" }); }, 80);
+                
+                  var elements = $("#" + id);
+                 elements.css({ transform: "scale(1.2)"});
+                 setTimeout(function () { elements.css({ transform: "scale(1)" }); }, 80); 
 
 }
 

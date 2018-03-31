@@ -8,14 +8,18 @@ var mergeRight = function (arr, score) {
                 arr[i][j] = arr[i][j] + arr[i][j - 1];
                 arr[i][j - 1] = 0;
                 score.value += arr[i][j];
+             
+
                 if (arr[i][j] > bestMerge) {
                     document.cookie = "bestmerge=" + arr[i][j];
                 }
                 merged = true;
+                
             }
         }
     }
     return merged;
+
 }
 //fusionner les chiffres identiques à gauche
 var mergeLeft = function (arr, score) {
@@ -30,7 +34,8 @@ var mergeLeft = function (arr, score) {
                 if (arr[i][j] > bestMerge) {
                     document.cookie = "bestmerge=" + arr[i][j];
                 }
-                merged = true;                                
+                merged = true; 
+                                               
             }
         }
     }
@@ -49,7 +54,8 @@ var mergeUp = function (arr, score) {
                 if (arr[i][j] > bestMerge) {
                     document.cookie = "bestmerge=" + arr[i][j];
                 }
-                merged = true;                                 
+                merged = true;
+                                                
             }
         }
     }
@@ -68,7 +74,8 @@ var mergeDown = function (arr, score) {
                 if (arr[i][j] > bestMerge) {
                     document.cookie = "bestmerge=" + arr[i][j];
                 }
-                merged = true;                                   
+                merged = true;  
+                                                
             }
         }
     }

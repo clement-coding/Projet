@@ -11,6 +11,7 @@ var slideRight = function (arr) {
         row.forEach(function (cell) {
             if (cell != 0) {
                 temp.push(cell);
+
             }
         })
         for (templen = temp.length; templen < 4; templen++) {
@@ -24,6 +25,7 @@ var slideRight = function (arr) {
         i++;
     });
     return slided;
+    
 }
 //faire glisser tous les chiffres à gauche
 var slideLeft = function (arr) {
